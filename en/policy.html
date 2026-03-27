@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mer Hart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body>
+  <div class="lang-switch">
+    <a href="/en/">Homepage</a> | <a href="/zasady.html">Čeština</a>
+  </div>
+  <main>
+
+  <h1>Privacy Policy</h1>
+
+  <p>Your privacy matters. This page explains what personal data I collect, why I collect it, and how I handle it.</p>
+
+  <h2>1. Data Controller</h2>
+  <p>
+    <strong>Zbyněk Merhaut</strong><br>
+    Email: <a href="mailto:hello@merhart.com">hello@merhart.com</a><br>
+    Address: Finská 2260, 272 01 Kladno, Czech republic<br>
+  </p>
+
+  <h2>2. What Data I Collect</h2>
+  <p>I only collect data you voluntarily provide when subscribing to my newsletter:</p>
+  <ul>
+    <li>email address</li>
+    <li>name (optional)</li>
+    <li>language preference (CZ/EN)</li>
+    <li>IP address and time of subscription</li>
+  </ul>
+
+  <h2>3. Purpose of Data Collection</h2>
+  <p>Your data is processed solely for the purpose of:</p>
+  <ul>
+    <li>sending the author newsletter (“Stories from Between”),</li>
+    <li>informing you about new writings, books, or projects,</li>
+    <li>analyzing readership interest and improving content.</li>
+  </ul>
+  <p>Your data <strong>will never be sold or shared for advertising purposes</strong>.</p>
+
+  <h2>4. Data Retention Period</h2>
+  <p>Your data is kept as long as you're subscribed to the newsletter or until you request deletion. After unsubscribing, data will be securely deleted within 30 days.</p>
+
+  <h2>5. Data Processors</h2>
+  <p>Your data may be technically processed through the following services:</p>
+  <ul>
+    <li>MailerLite – email marketing platform</li>
+    <li>OVH Cloud – website hosting</li>
+  </ul>
+  <p>All providers comply with GDPR and have their own privacy policies.</p>
+
+  <h2>6. Your Rights</h2>
+  <p>You have the right to:</p>
+  <ul>
+    <li>access your personal data,</li>
+    <li>request correction or deletion,</li>
+    <li>unsubscribe at any time (a link is included in every email),</li>
+    <li>file a complaint with your local data protection authority.</li>
+  </ul>
+
+  <h2>7. Contact</h2>
+  <p>If you have any questions, feel free to contact me: <a href="mailto:hello@merhart.com">hello@merhart.com</a></p>
+
+  <p style="font-size: 0.9em; color: #666;">Last updated: August 2025</p>
+
+<div id="footer"></div>
+<script>
+  fetch("/en/footer.html")
+    .then(response => response.text())
+    .then(html => document.getElementById("footer").innerHTML = html)
+    .catch(err => console.error("Chyba při načítání patičky:", err));
+</script>
+<noscript>
+  <div style="text-align: center; color: #900; font-size: 14px; padding: 1rem;">
+    This page needs JavaScript enabled to show footer.
+  </div>
+</noscript>
+<p class="copyright">© <span id="year"></span> Mer Hart</p>
+
+  </main>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

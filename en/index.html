@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mer Hart · Stories from Between</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body>
+  <div class="lang-switch">
+    <a href="/">Čeština</a>
+  </div>
+  <main>
+    <h1>Mer Hart</h1>
+    <h2 class="subtitle">Stories from Between</h2>
+
+<p>The Between does not appear on any map.</p>
+<p>It is a threshold that can be crossed at dawn or at dusk.<br />
+Where the world of people gives way to the forest, and where the old yields to the new.</p>
+<p>From time to time, the roads of everyone lead there.</p>
+<p>It is not a place where one can safely wait.</p>
+<p>Every step taken from there must be paid for.</p>
+<p>This is where stories are born.<br />
+I only write them down.</p>
+<p>My name is Mer Hart.</p>
+
+<div id="footer"></div>
+<script>
+  fetch("/en/footer.html")
+    .then(response => response.text())
+    .then(html => document.getElementById("footer").innerHTML = html)
+    .catch(err => console.error("Chyba při načítání patičky:", err));
+</script>
+<noscript>
+  <div style="text-align: center; color: #900; font-size: 14px; padding: 1rem;">
+    This page needs JavaScript enabled to show footer.
+  </div>
+</noscript>
+<p class="copyright">© <span id="year"></span> Mer Hart</p>
+
+  </main>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

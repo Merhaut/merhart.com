@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Mer Hart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body>
+  <div class="lang-switch">
+    <a href="/">Domů</a> | <a href="/en/policy.html">English</a>
+  </div>
+  <main>
+
+ <h1>Zásady ochrany osobních údajů</h1>
+
+  <p>Vaše soukromí beru vážně. Tento dokument popisuje, jaké osobní údaje zpracovávám, proč a jak s nimi nakládám.</p>
+
+  <h2>1. Kdo je správcem údajů</h2>
+  <p>
+    <strong>Zbyněk Merhaut</strong><br>
+    E-mail: <a href="mailto:hello@merhart.com">hello@merhart.com</a><br>
+    Adresa: Finská 2260, 272 01 Kladno, Česká republika<br>
+  </p>
+
+  <h2>2. Jaké údaje zpracovávám</h2>
+  <p>Zpracovávám pouze údaje, které mi sami poskytnete při přihlášení k odběru novinek:</p>
+  <ul>
+    <li>e-mailová adresa</li>
+    <li>jméno (nepovinně)</li>
+    <li>jazyková preference (CZ/EN)</li>
+    <li>IP adresa a čas registrace</li>
+  </ul>
+
+  <h2>3. Za jakým účelem</h2>
+  <p>Vaše údaje zpracovávám výhradně za účelem:</p>
+  <ul>
+    <li>zasílání autorského newsletteru („Stories from Between“),</li>
+    <li>informování o nových textech, knihách a projektech,</li>
+    <li>analýzy zájmu a zlepšování obsahu.</li>
+  </ul>
+  <p>Vaše údaje <strong>neprodávám ani je nepředávám třetím stranám za účelem reklamy</strong>.</p>
+
+  <h2>4. Jak dlouho údaje uchovávám</h2>
+  <p>Údaje uchovávám po dobu, dokud budete přihlášeni k odběru, nebo dokud nepožádáte o jejich výmaz. Po odhlášení budou bezpečně smazány do 30 dnů.</p>
+
+  <h2>5. Kdo má k údajům přístup</h2>
+  <p>
+    Vaše údaje mohou být technicky zpracovány prostřednictvím těchto nástrojů:
+  </p>
+  <ul>
+    <li>MailerLite – e-mailová platforma</li>
+    <li>OVH cloud – hostingové služby</li>
+  </ul>
+  <p>Všichni poskytovatelé dodržují pravidla GDPR a mají vlastní zásady ochrany osobních údajů.</p>
+
+  <h2>6. Vaše práva</h2>
+  <p>Máte právo kdykoliv:</p>
+  <ul>
+    <li>požádat o přístup ke svým údajům,</li>
+    <li>požádat o opravu nebo výmaz,</li>
+    <li>odhlásit se z odběru (odkaz je v každém e-mailu),</li>
+    <li>podat stížnost u Úřadu pro ochranu osobních údajů.</li>
+  </ul>
+
+  <h2>7. Kontakt</h2>
+  <p>Pokud máte jakékoli dotazy, napište mi na: <a href="mailto:hello@merhart.com">hello@merhart.com</a></p>
+
+  <p style="font-size: 0.9em; color: #666;">Aktualizováno: srpen 2025</p>
+
+<div id="footer"></div>
+<script>
+  fetch("/footer.html")
+    .then(response => response.text())
+    .then(html => document.getElementById("footer").innerHTML = html)
+    .catch(err => console.error("Chyba při načítání patičky:", err));
+</script>
+<noscript>
+  <div style="text-align: center; color: #900; font-size: 14px; padding: 1rem;">
+    Tato stránka vyžaduje JavaScript pro zobrazení patičky.
+  </div>
+</noscript>
+<p class="copyright">© <span id="year"></span> Mer Hart</p>
+
+</main>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

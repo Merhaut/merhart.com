@@ -13,7 +13,8 @@
 <body>
   <main>
     <h1>Královna</h1>
-
+    <p class="story-note">Příběh z meziprostoru. První zastavení ve světě, kam se budu vracet.</p>
+    
     <p>„Matýýýsku," volání se odráželo ze všech stran. Hromotluk s hnědými rozcuchanými vlasy popadnul do tlap sekeru. „Kdo je? Tak vylez! Ukaž se!" rozhlížel se kolem sebe. Les utichnul a jen vítr ohýbal koruny stromů. Bílý kouř se povaloval po mýtině a pronikaly jím poslední paprsky zapadajícího slunce. Z obzoru ho sledoval hrad na Krkavčí skále.</p>
 
     <p>Asi se mi to jen zdálo, otočil se ke starému vykotlanému dubu. Z otvoru ve kmeni hučela včelí křídla. Stále se ho ale držel pocit, že tu není sám. Rozhodnul se, že práci rychle dokončí a vrátí se domů. Sebral ze země dýmák. Kus vydlabaného dřeva, ve kterém pálil mokré listí přikryté mechem. Kouř ho štípal v očích a slzy mu tekly po tvářích. Obcházel s ním kolem stromu a včely se slétaly dovnitř. Brť, jejich nový domov, vyspravil trámkem a uzavřel prkny. Nechal jen malou skulinu, aby mohly včely ven. Nakonec udělal sekerou do kmene svou značku.</p>
@@ -60,18 +61,22 @@
 
     <p>Za chvíli usnul klidným spánkem.</p>
 
-    <hr>
-    <p class="copyright">© <span id="year"></span> Mer Hart</p>
-
-    <div id="footer"></div>
-  </main>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    fetch("/footer.html")
-      .then(response => response.text())
-      .then(html => document.getElementById("footer").innerHTML = html)
-      .catch(err => console.error("Chyba při načítání patičky:", err));
-  </script>
+<div id="footer"></div>
+<script>
+  fetch("/footer.html")
+    .then(response => response.text())
+    .then(html => document.getElementById("footer").innerHTML = html)
+    .catch(err => console.error("Chyba při načítání patičky:", err));
+</script>
+<noscript>
+  <div style="text-align: center; color: #900; font-size: 14px; padding: 1rem;">
+    Tato stránka vyžaduje JavaScript pro zobrazení patičky.
+  </div>
+</noscript>
+<p class="copyright">© <span id="year"></span> Mer Hart</p>
+</main>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>

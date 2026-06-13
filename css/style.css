@@ -79,3 +79,10 @@ hr {
   text-align: center;
   margin-top: 2rem;
 }
+
+.story-note {
+  font-style: italic;
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}

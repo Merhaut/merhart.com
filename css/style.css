@@ -15,6 +15,16 @@ main {
   text-align: left;
 }
 
+main a {
+  color: #333;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+main a:hover {
+  color: #000;
+}
+
 h1 {
   font-size: 2rem;
   margin-bottom: 0.5rem;

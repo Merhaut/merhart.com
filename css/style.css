@@ -11,6 +11,7 @@ body {
 }
 
 main {
+  width: 100%;
   max-width: 600px;
   text-align: left;
 }
@@ -98,13 +99,14 @@ hr {
 
 .story-list {
   display: grid;
-  width: max-content;
-  max-width: 100%;
+  width: 100%;
+  max-width: 500px;
   margin: 0 auto;
   gap: 1.75rem;
 }
 
 .story-item {
+  min-width: 0;
   margin: 0;
   text-align: left;
 }
@@ -119,4 +121,5 @@ hr {
   color: #666;
   font-size: 1.1rem;
   line-height: 1.5;
+  overflow-wrap: anywhere;
 }

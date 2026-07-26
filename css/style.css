@@ -97,15 +97,15 @@ hr {
 }
 
 .story-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  width: max-content;
+  max-width: 100%;
+  margin: 0 auto;
   gap: 1.75rem;
 }
 
 .story-item {
-  width: fit-content;
-  max-width: 100%;
-  margin: 0 auto;
+  margin: 0;
   text-align: left;
 }
 

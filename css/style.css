@@ -95,3 +95,25 @@ hr {
   font-size: 1rem;
   margin-bottom: 2rem;
 }
+
+.story-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.story-item {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.story-item h2 {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.story-item p {
+    margin: .3rem 0 0;
+    color: #666;
+}

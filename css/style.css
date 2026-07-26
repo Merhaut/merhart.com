@@ -123,3 +123,17 @@ hr {
   line-height: 1.5;
   overflow-wrap: anywhere;
 }
+
+@media (max-width: 600px) {
+  body:has(.lang-switch) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+
+  .lang-switch {
+    position: static;
+    align-self: flex-end;
+    margin-bottom: 3rem;
+  }
+}

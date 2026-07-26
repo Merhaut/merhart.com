@@ -97,23 +97,26 @@ hr {
 }
 
 .story-list {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
 }
 
 .story-item {
-    display: inline-block;
-    margin: 0 auto;
-    text-align: left;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .story-item h2 {
-    margin: 0;
-    font-size: 1.4rem;
+  margin: 0;
+  font-size: 1.15rem;
 }
 
 .story-item p {
-    margin: .3rem 0 0;
-    color: #666;
+  margin: 0.1rem 0 0;
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }

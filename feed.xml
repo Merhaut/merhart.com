@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="cs">
+  <title>Mer Hart · Stories from Between</title>
+  <subtitle>Autorské příběhy z meziprostoru.</subtitle>
+  <id>https://merhart.com/feed.xml</id>
+  <link href="https://merhart.com/" />
+  <link href="https://merhart.com/feed.xml" rel="self" type="application/atom+xml" />
+  <updated>2026-08-08T13:22:00Z</updated>
+  <author>
+    <name>Mer Hart</name>
+  </author>
+
+  <entry>
+    <title>Ocásek</title>
+    <id>https://merhart.com/stories/ocasek.html</id>
+    <link href="https://merhart.com/stories/ocasek.html" />
+    <published>2026-07-19T11:59:58Z</published>
+    <updated>2026-07-24T18:01:51Z</updated>
+    <summary>Příběh o strachu, řemesle a kouři z bukového dřeva.</summary>
+  </entry>
+
+  <entry>
+    <title>Královna</title>
+    <id>https://merhart.com/stories/kralovna.html</id>
+    <link href="https://merhart.com/stories/kralovna.html" />
+    <published>2026-06-13T16:24:58Z</published>
+    <updated>2026-07-10T19:35:17Z</updated>
+    <summary>První zastavení ve starém světě.</summary>
+  </entry>
+</feed>

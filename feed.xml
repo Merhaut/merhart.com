@@ -5,7 +5,7 @@
   <id>https://merhart.com/feed.xml</id>
   <link href="https://merhart.com/" />
   <link href="https://merhart.com/feed.xml" rel="self" type="application/atom+xml" />
-  <updated>2026-08-08T13:22:00Z</updated>
+  <updated>2026-08-08T13:50:00Z</updated>
   <author>
     <name>Mer Hart</name>
   </author>
@@ -16,7 +16,7 @@
     <link href="https://merhart.com/stories/ocasek.html" />
     <published>2026-07-19T11:59:58Z</published>
     <updated>2026-07-24T18:01:51Z</updated>
-    <summary>Příběh o strachu, řemesle a kouři z bukového dřeva.</summary>
+    <summary>Vesnický řezník se po jedné divoké noci probudí s kocovinou a nepříjemnou vzpomínkou. O pár dní později se při zabijačce podívá praseti do očí a nic už není tak jednoduché jako dřív.</summary>
   </entry>
 
   <entry>
@@ -25,6 +25,6 @@
     <link href="https://merhart.com/stories/kralovna.html" />
     <published>2026-06-13T16:24:58Z</published>
     <updated>2026-07-10T19:35:17Z</updated>
-    <summary>První zastavení ve starém světě.</summary>
+    <summary>Jednoho večera brtník Matyáš zaslechne u starého dubu neznámý hlas. Vydá se za ním a najde něco, co už měl za ztracené.</summary>
   </entry>
 </feed>

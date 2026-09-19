@@ -5,10 +5,19 @@
   <id>https://merhart.com/feed.xml</id>
   <link href="https://merhart.com/" />
   <link href="https://merhart.com/feed.xml" rel="self" type="application/atom+xml" />
-  <updated>2026-08-08T13:50:00Z</updated>
+  <updated>2026-09-19T11:17:40Z</updated>
   <author>
     <name>Mer Hart</name>
   </author>
+
+  <entry>
+    <title>Černá třešeň</title>
+    <id>https://merhart.com/stories/cerna-tresen.html</id>
+    <link href="https://merhart.com/stories/cerna-tresen.html" />
+    <published>2026-09-19T11:17:40Z</published>
+    <updated>2026-09-19T11:17:40Z</updated>
+    <summary>Malá Slávka se vypraví k lesu na maliny. Místo nich ji však čeká setkání, na které jen tak nezapomene.</summary>
+  </entry>
 
   <entry>
     <title>Ocásek</title>

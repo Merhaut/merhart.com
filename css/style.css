@@ -74,6 +74,42 @@ hr {
   margin: 3rem 0;
 }
 
+/* Quiet, accessible links to Mer Hart social channels. */
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: #777;
+  text-decoration: none;
+}
+
+.social-links svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.social-links a:hover,
+.social-links a:focus-visible {
+  color: #555;
+}
+
+.social-links a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
 .privacy-note {
   margin-top: 0.5rem;
   text-align:center;

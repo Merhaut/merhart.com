@@ -113,12 +113,11 @@ hr {
 .contact-link {
   margin: 0.5rem 0 1rem;
   text-align: center;
-  font-size: 0.95rem;
-  color: #777;
+  color: #888;
 }
 
 .contact-link a {
-  color: #777;
+  color: #888;
 }
 
 .privacy-note {

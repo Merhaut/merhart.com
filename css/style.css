@@ -110,6 +110,17 @@ hr {
   border-radius: 4px;
 }
 
+.contact-link {
+  margin: 0.5rem 0 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #777;
+}
+
+.contact-link a {
+  color: #777;
+}
+
 .privacy-note {
   margin-top: 0.5rem;
   text-align:center;

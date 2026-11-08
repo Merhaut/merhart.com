@@ -27,7 +27,7 @@
     button.className = 'theme-toggle';
     function updateButton() {
       var icons = { system: '◐', light: '☀', dark: '☾' };
-      button.textContent = icons[mode] + ' ' + strings[mode];
+      button.textContent = icons[mode];
       button.setAttribute('aria-label', strings.change + ': ' + strings[mode]);
       button.title = strings.change + ': ' + strings[mode];
     }

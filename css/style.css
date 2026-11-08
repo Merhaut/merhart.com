@@ -262,10 +262,10 @@ a:focus-visible, .theme-toggle:focus-visible { outline: 2px solid var(--focus); 
   border-radius: 999px;
   background: var(--control-bg);
   color: var(--body-text);
-  font: 0.85rem/1.2 system-ui, sans-serif;
+  font: 1.35rem/1 system-ui, sans-serif;
   cursor: pointer;
 }
 .theme-toggle:hover { border-color: var(--primary-link); }
 @media (max-width: 600px) {
-  .theme-toggle { position: absolute; }
+  .theme-toggle { position: absolute; font-size: 1.55rem; }
 }

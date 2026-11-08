@@ -183,3 +183,89 @@ hr {
     margin-bottom: 3rem;
   }
 }
+
+/* Reader-friendly colors. The browser preference works without JavaScript. */
+:root {
+  color-scheme: light;
+  --page-bg: #fdfdfd;
+  --heading: #333333;
+  --body-text: #222222;
+  --primary-link: #333333;
+  --secondary-link: #555555;
+  --muted-text: #666666;
+  --footer-text: #777777;
+  --subtle-text: #888888;
+  --rule: #cccccc;
+  --control-bg: #f4f2ee;
+  --control-border: #c3bfb8;
+  --focus: #745834;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --page-bg: #191b1c;
+    --heading: #f0e9dc;
+    --body-text: #ded9cf;
+    --primary-link: #d4bea0;
+    --secondary-link: #c4b59f;
+    --muted-text: #aaa69e;
+    --footer-text: #aaa69e;
+    --subtle-text: #aaa69e;
+    --rule: #41413e;
+    --control-bg: #282a2b;
+    --control-border: #56534e;
+    --focus: #e5cba6;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page-bg: #191b1c;
+  --heading: #f0e9dc;
+  --body-text: #ded9cf;
+  --primary-link: #d4bea0;
+  --secondary-link: #c4b59f;
+  --muted-text: #aaa69e;
+  --footer-text: #aaa69e;
+  --subtle-text: #aaa69e;
+  --rule: #41413e;
+  --control-bg: #282a2b;
+  --control-border: #56534e;
+  --focus: #e5cba6;
+}
+:root[data-theme="light"] { color-scheme: light; }
+
+body { background-color: var(--page-bg); color: var(--body-text); }
+h1, h2, h3 { color: var(--heading); }
+p, li { color: var(--body-text); }
+main a { color: var(--primary-link); }
+.subtitle, .story-note, .story-item p { color: var(--muted-text); }
+.lang-switch a { color: var(--secondary-link); }
+footer, footer a, .social-links a { color: var(--footer-text); }
+.social-links a:hover, .social-links a:focus-visible { color: var(--primary-link); }
+.contact-link, .contact-link a, .privacy-note, .privacy-note a, .copyright { color: var(--subtle-text); }
+hr { border-top-color: var(--rule); }
+a:focus-visible, .theme-toggle:focus-visible { outline: 2px solid var(--focus); outline-offset: 4px; }
+
+.theme-toggle {
+  position: fixed;
+  top: 0.65rem;
+  left: 0.65rem;
+  z-index: 10;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid var(--control-border);
+  border-radius: 999px;
+  background: var(--control-bg);
+  color: var(--body-text);
+  font: 0.85rem/1.2 system-ui, sans-serif;
+  cursor: pointer;
+}
+.theme-toggle:hover { border-color: var(--primary-link); }
+@media (max-width: 600px) {
+  .theme-toggle { position: absolute; }
+}

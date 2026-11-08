@@ -268,4 +268,6 @@ a:focus-visible, .theme-toggle:focus-visible { outline: 2px solid var(--focus); 
 .theme-toggle:hover { border-color: var(--primary-link); }
 @media (max-width: 600px) {
   .theme-toggle { position: absolute; font-size: 1.55rem; }
+  /* Story pages have no language navigation: reserve space above the title. */
+  .theme-toggle + main { padding-top: 3.5rem; }
 }
